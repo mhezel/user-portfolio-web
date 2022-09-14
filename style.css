@@ -4,7 +4,14 @@
 ul{
     list-style: none;
 }
+main{
+    padding-top: 100px;
+}
 header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
     height: 100px;
@@ -133,40 +140,72 @@ header .header-cases{
 }
 /* FOR RESPONSIVE WEBSITE LAYOUT - DESKTOP VERSION */
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
 
-    .wrap-center{
+    .wrap-center {
         width: 1000px;
         margin: 0 auto;
     }
-    .index-banner{
+
+    .index-banner {
         width: 100%;
         height: 650px;
     }
-    .index-banner h1{
+    .index-banner h1 {
         display: block;
         width: 560px;
         margin: 0px auto;
     }
-    .index-links{
+    .index-links {
         padding-bottom: 20px;
         overflow: hidden;
     }
-    .index-links div{
+    .index-links div {
         margin: 20px 10px 0px;
         height: 230px;
         background-color: #f2f2f2;
         float: left;
     }
-    .index-square{
+    .index-square {
         width: calc(25% - 20px) !important;
-
     }
-    .index-rectangle{
+
+    .index-rectangle {
         width: calc(50% - 20px) !important;
     }
+
     .index-links div h3 {
         line-height: 175px;
+    }
+    /* STYLING PROJECT TAB */
+    .projects-links {
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin-left: 135px;
+    }
+    .projects-links .wrap-project div {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px 0px;
+        display: block;
+        background-color: #e3e3e3;
+    }
+    .projects-links h2{
+        font-family:"Georgia";
+        font-size: 28px;
+        font-weight: 600;
+        color: #111;
+        line-height: 100px;
+        text-transform: Uppercase;
+    }
+    .projects-links p{
+        padding-top: 40%;
+        font-family:"Georgia";
+        font-size: 24px;
+        color: #111;
+        text-align: center;
+        text-transform: capitalize;
     }
 }
 footer{
@@ -210,3 +249,5 @@ footer ul li a {
         margin-left: 50px;
     }
 }
+
+
